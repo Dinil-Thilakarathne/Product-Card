@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+/* 
+color code 
+  background-color: gray;
+  #4f60f9
+  #f94f4f
+  #A4F94F
+*/
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(200, 200, 200);
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.container .box {
+    height: 70vh;
+    width: 50vh;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.container .box .product-image{
+    width: 50vh;
+    height: 50%;
+    /* background-color: #A4F94F; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    position: relative;
+}
+
+.container .box:nth-child(1) .product-image{
+    background-color: #A4F94F;
+}
+.container .box:nth-child(2) .product-image{
+    background-color: #f94f4f;
+}
+.container .box:nth-child(3) .product-image{
+    background-color: #4f60f9;
+}
+
+.container .box .product-image img{
+    height: 95%;
+}
+
+.container .box .product-image .icon{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 20px;
+    letter-spacing: 8px;
+}
+
+.container .box .product-image .icon  i:hover{
+    color: white;
+    cursor: pointer;
+}
+
+/* Product content section */
+
+.container .box .product-content {
+    height: 50%;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.container .box .product-content .color-section div{
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color: red;
+    display: inline-flex;
+}
+.container .box .product-content .color-section div:nth-child(2){
+    background-color: #A4F94F;
+}
+.container .box .product-content .color-section div:nth-child(3){
+    background-color: #f94f4f;
+}
+.container .box .product-content .color-section div:nth-child(4){
+    background-color: #4f60f9;
+}
+
+.container .box .product-content .btn-section button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    /* background-color: #A4F94F; */
+}
+.container .box:nth-child(1) .product-content .btn-section button{
+    background-color: #A4F94F;
+}
+.container .box:nth-child(2) .product-content .btn-section button{
+    background-color: #f94f4f;
+}
+.container .box:nth-child(3) .product-content .btn-section button{
+    background-color: #4f60f9;
+}
+.container .box .product-content .btn-section button:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container .box .product-content .info-section{
+    pointer-events: none;
+}
